@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ $gradienteazul:linear-gradient(to left bottom, #ccd1d3, #78b8dd, #0098ed, #0072f5, #013dea);
+ $gradienteverde:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+ $gradienteazulfuerte:linear-gradient(to right top, #0c2029, #003159, #003f8f, #0046c3, #013dea);
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+
+}
+// sobre nosotros
+.sobreNosotros{
+    background-color: #E6E7E8;
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem ;
+    justify-content: center;
+    .medio{
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .texto{ 
+            font-family: 'Roboto', sans-serif;
+            width: 580px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        .icon{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            gap: 5rem;
+            .box_2 {
+                transition: width 2s, height 2s, transform 2s;
+                &:hover {
+                        transform: rotate(360deg);
+                }
+                
+            }
+            .animate__wobble {
+                --animate-duration: 2s;
+            
+            }
+            .animate__backInDown{
+                --animate-duration: 4s;
+            
+            }
+            .contenedor__foto{
+
+                    .parrafo{
+                        font-family: 'Roboto', sans-serif;
+                        text-align: center;
+                        
+                    }
+                
+
+            }
+            
+        }
+    }
+}
+.titulo{
+    font-size: 36px;
+    color: #D02322;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+// geleria
+.galeria{
+    display: grid;
+    grid-template-areas: 
+    "figasa     wok pure  pure"
+    "ravioles donas pure  pure"
+    "vacio   donas  varios  varios"
+    " vacio  pasta  varios  varios";
+    grid-template-columns:1fr  2fr   1fr   1fr ;
+    gap: 1em;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+
+        .galeria_foto{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .ravioles{
+                        grid-area: ravioles;
+
+
+                    }
+                    .pure{
+                        grid-area: pure;
+                        &:hover{
+                            transition: width 2s, height 2s, transform 3s;
+                            width: 500px;
+                            height: 490px;
+                        
+                        }
+                    }
+                    .vacio{
+                        grid-area: vacio;
+                        &:hover{
+                            transition: width 2s, height 2s, transform 3s;
+                            width: 510px;
+                            
+                            transform: scale(1);
+                            
+                        
+                        }
+                    }
+                    .pasta{
+                        grid-area: pasta;
+                        &:hover{
+                            transition: width 2s, height 2s, transform 3s;
+                            width: 590px;
+                            height: 390px;
+                            transform: scale(1);
+                            
+                        
+                        }
+                    }
+                    .wok{
+                        grid-area: wok;
+                        &:hover{
+                            transition: width 2s, height 2s, transform 3s;
+                            width: 270px;
+                            height: 210px;
+                           
+                        
+                        }
+                    }
+                    .figasa{
+                        grid-area: figasa;
+                   
+                    }
+                    .donas{
+                        grid-area: donas;
+                        &:hover{
+                            transition: width 3s, height 3s, transform 4s;
+                            width: 390px;
+                            height: 290px;
+                          
+                        
+                        }
+                    }
+                    .varios{
+                        grid-area:varios;
+                    }
+                    
+        
+}
+// menu
+.section{
+    grid-area: section;
+    background-image: $gradienteazul;
+}
+// formulario
+.article{
+    grid-area: article;
+    background-image: $gradienteverde;
+    .form-label {
+        color: #D02322;
+        text-align: center;
+        font-weight: 900;
+    }
+    .botonEnviar{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+}
+}
+// footer
+.footer{
+    grid-area: footer;
+    background-image: $gradienteazulfuerte;
+    text-align: center;
+    .img{
+        width: 88px;
+    }
+    .infoContacto{
+        font-family: "ZonaPro-bold", "helvetica";
+    }
+}
