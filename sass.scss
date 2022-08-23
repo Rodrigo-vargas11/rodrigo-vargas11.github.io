@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "mixin";  
+@import "mapa";
+
  $gradienteazul:linear-gradient(to left bottom, #ccd1d3, #78b8dd, #0098ed, #0072f5, #013dea);
  $gradienteverde:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
  $gradienteazulfuerte:linear-gradient(to right top, #0c2029, #003159, #003f8f, #0046c3, #013dea);
 *{
-    margin: 0;  
-    padding: 0;
-    box-sizing: border-box;
+    @include reseteo;  //utilizo mixin
 
 }
+
 // sobre nosotros
 .sobreNosotros{
     background-color: #E6E7E8;
@@ -16,9 +18,9 @@
     justify-content: center;
     .medio{
         grid-column: 2/3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+         display:  map-get($flex,aplico); //utilizo mapa
+        flex-direction:  map-get($flex,direction);
+        align-items:  map-get($flex,items);
         .texto{ 
             font-family: 'Roboto', sans-serif;
             width: 580px;
@@ -26,7 +28,7 @@
             margin-bottom: 25px;
         }
         .icon{
-            display: flex;
+            display: map-get($flex,aplico);
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
@@ -39,11 +41,11 @@
                 
             }
             .animate__wobble {
-                --animate-duration: 2s;
+                --animate-duration: 4s;
             
             }
             .animate__backInDown{
-                --animate-duration: 4s;
+                @extend .animate__wobble; // se utilizo extend
             
             }
             .contenedor__foto{
@@ -61,10 +63,7 @@
     }
 }
 .titulo{
-    font-size: 36px;
-    color: #D02322;
-    margin-bottom: 10px;
-    text-align: center;
+  @include titulo;  //utilizo mixin
 
 }
 // geleria
@@ -128,13 +127,13 @@
                             transition: width 2s, height 2s, transform 3s;
                             width: 270px;
                             height: 210px;
-                           
+                        
                         
                         }
                     }
                     .figasa{
                         grid-area: figasa;
-                   
+                
                     }
                     .donas{
                         grid-area: donas;
@@ -142,7 +141,7 @@
                             transition: width 3s, height 3s, transform 4s;
                             width: 390px;
                             height: 290px;
-                          
+                        
                         
                         }
                     }
@@ -185,3 +184,5 @@
         font-family: "ZonaPro-bold", "helvetica";
     }
 }
+@import "media";
+
