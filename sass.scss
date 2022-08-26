@@ -9,6 +9,23 @@
     @include reseteo;  //utilizo mixin
 
 }
+// encabezado
+.text-style{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    &:hover{
+        color: #D02322;
+
+    }
+}
+
+.logo{
+    width: 179px !important;
+    height: 89px !important;
+}
+.alto{
+    height: 100vh;
+}
 
 // sobre nosotros
 .sobreNosotros{
@@ -35,6 +52,7 @@
             gap: 5rem;
             .box_2 {
                 transition: width 2s, height 2s, transform 2s;
+              
                 &:hover {
                         transform: rotate(360deg);
                 }
@@ -80,10 +98,12 @@
     margin: 0 auto;
     padding-bottom: 10px;
 
+
         .galeria_foto{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        
                     }
                     .ravioles{
                         grid-area: ravioles;
@@ -96,6 +116,8 @@
                             transition: width 2s, height 2s, transform 3s;
                             width: 500px;
                             height: 490px;
+                            transition-duration: 2s;
+                            transition-delay: 1s;
                         
                         }
                     }
@@ -117,6 +139,10 @@
                             width: 590px;
                             height: 390px;
                             transform: scale(1);
+                            transition-duration: 3s;
+                            transition-delay: 1s;
+                            
+                           
                             
                         
                         }
@@ -127,8 +153,17 @@
                             transition: width 2s, height 2s, transform 3s;
                             width: 270px;
                             height: 210px;
+                            transition-duration: 2s;
+                            transition-delay: 1s;
                         
                         
+                        }
+                        &:hover::before{
+                            transition: width 2s, height 2s, transform 3s;
+                            width: 399px;
+                            height: 262px;
+                            transition-duration: 2s;
+                            transition-delay: 1s;
                         }
                     }
                     .figasa{
@@ -184,5 +219,85 @@
         font-family: "ZonaPro-bold", "helvetica";
     }
 }
-@import "media";
+.section{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 
+
+
+
+.img1{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0;
+    .imagen{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    &:hover::before{
+        transform: scaleY(1);
+        
+    }
+    
+    &::before{
+        content: "Menu Formal";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0F0C02;
+        opacity: 0.9;
+        transform: scaleY(0);
+        transition: transform .4s;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        
+    }
+    // .letra{
+
+    // }
+    
+
+}
+.img2{
+    @extend .img1;
+    background-image: url(/imagenes/ravioles.png);
+    .imagen0{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+
+    
+
+}
+}
+iframe{
+    width: 100%;
+    height: 400px
+}
+.contacto{
+        width: 310px;
+        text-align: left;
+        line-height: 3;
+    }
+    i{
+        font-size: 20px;
+        margin-right: 5px
+    }
+@import "media";
