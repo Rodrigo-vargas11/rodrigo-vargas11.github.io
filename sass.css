@@ -56,6 +56,9 @@
 .sobreNosotros .medio .icon .animate__wobble, .sobreNosotros .medio .icon .animate__backInDown {
   --animate-duration: 4s;
 }
+.sobreNosotros .medio .icon .contenedor__foto {
+  text-align: center;
+}
 .sobreNosotros .medio .icon .contenedor__foto .parrafo {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -70,7 +73,7 @@
 
 .galeria {
   display: grid;
-  grid-template-areas: "figasa     wok pure  pure" "ravioles donas pure  pure" "vacio   donas  varios  varios" " vacio  pasta  varios  varios";
+  grid-template-areas: "oreo     wok pure  pure" "ravioles donas pure  pure" "pescado   donas  varios  varios" " pescado  pasta  varios  varios";
   grid-template-columns: 1fr 2fr 1fr 1fr;
   gap: 1em;
   width: 85%;
@@ -96,12 +99,14 @@
   transition-duration: 2s;
   transition-delay: 1s;
 }
-.galeria .vacio {
-  grid-area: vacio;
+.galeria .pescado {
+  grid-area: pescado;
+  transition: all 4s;
+  transition: width 3s transform 1s;
+  transition-delay: 1s;
 }
-.galeria .vacio:hover {
-  transition: width 2s, height 2s, transform 3s;
-  width: 510px;
+.galeria .pescado:hover {
+  width: 320px;
   transform: scale(1);
 }
 .galeria .pasta {
@@ -132,8 +137,8 @@
   transition-duration: 2s;
   transition-delay: 1s;
 }
-.galeria .figasa {
-  grid-area: figasa;
+.galeria .oreo {
+  grid-area: oreo;
 }
 .galeria .donas {
   grid-area: donas;
@@ -248,6 +253,29 @@ i {
   margin-right: 5px;
 }
 
+#tipoEvento fieldset {
+  width: 80%;
+  border: 3px solid #D02322;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 21px 105px;
+}
+#tipoEvento fieldset legend {
+  font-size: 21px;
+  color: #D02322;
+  float: none;
+}
+#tipoEvento fieldset .flex {
+  display: flex;
+  gap: 91px;
+  justify-content: space-around;
+}
+#tipoEvento fieldset .flex .logo-evento {
+  width: 78px;
+  height: 57px;
+}
+
 @media screen and (min-width: 375px) and (max-width: 480px) {
   /* encabezado */
   .encabezado {
@@ -273,8 +301,18 @@ i {
     flex-direction: column;
     align-items: center;
   }
+  #tipoEvento fieldset .flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
   iframe {
     width: 90%;
+  }
+  .d-flex {
+    flex-direction: column;
+    padding: 25px 0;
   }
   /* galeria */
   .galeria {

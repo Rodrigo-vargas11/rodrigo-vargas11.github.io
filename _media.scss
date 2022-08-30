@@ -36,11 +36,24 @@ flex-direction: column;
     }
 }
 }
+#tipoEvento fieldset{
+
+    .flex{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    }
 
 
 
 iframe{
     width: 90%;
+}
+.d-flex{
+    flex-direction: column;
+    padding: 25px 0;
 }
 /* galeria */
 .galeria{
@@ -49,6 +62,8 @@ iframe{
   gap: 5px;
     
 }
+
+
 }
 
 @media screen and (min-width: 768px )and (max-width: 1024px) {
