@@ -2,9 +2,6 @@
 @import "mixin";  
 @import "mapa";
 
- $gradienteazul:linear-gradient(to left bottom, #ccd1d3, #78b8dd, #0098ed, #0072f5, #013dea);
- $gradienteverde:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
- $gradienteazulfuerte:linear-gradient(to right top, #0c2029, #003159, #003f8f, #0046c3, #013dea);
 *{
     @include reseteo;  //utilizo mixin
 
