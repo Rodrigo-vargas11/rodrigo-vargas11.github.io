@@ -195,7 +195,7 @@
 // formulario
 .article{
     grid-area: article;
-    background-image: $gradienteverde;
+    background: radial-gradient(#4ca9d2b0, transparent);
     .form-label {
         color: #D02322;
         text-align: center;
@@ -211,8 +211,11 @@
 // footer
 .footer{
     grid-area: footer;
-    background-image: $gradienteazulfuerte;
+    background: radial-gradient(#a7bee0d9, transparent); 
     text-align: center;
+    .fondo{
+        background: radial-gradient(rgba(228, 231, 235, 0.431372549), #3c35358c);
+    }
     .img{
         width: 88px;
     }
@@ -325,3 +328,31 @@ iframe{
         }
     }
 @import "media";
+.animate__backInLeft{
+    --animate-duration: 5s;
+}
+body{
+  position: relative;
+
+
+.stiker{
+    padding: 15px 8px 15px 8px;
+  width: 35px;
+  height: 85px;
+  position:  fixed;
+  top: 500px;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  background-color: #D02322;
+  z-index: 1;
+  color:white;
+ i{
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+    
+ }
+}
+}
+

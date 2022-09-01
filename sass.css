@@ -154,7 +154,7 @@
 
 .article {
   grid-area: article;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background: radial-gradient(rgba(76, 169, 210, 0.6901960784), transparent);
 }
 .article .form-label {
   color: #D02322;
@@ -169,8 +169,11 @@
 
 .footer {
   grid-area: footer;
-  background-image: linear-gradient(to right top, #0c2029, #003159, #003f8f, #0046c3, #013dea);
+  background: radial-gradient(rgba(167, 190, 224, 0.8509803922), transparent);
   text-align: center;
+}
+.footer .fondo {
+  background: radial-gradient(rgba(228, 231, 235, 0.431372549), rgba(60, 53, 53, 0.5490196078));
 }
 .footer .img {
   width: 88px;
@@ -335,4 +338,29 @@ i {
   .contacto {
     margin: auto;
   }
+}
+.animate__backInLeft {
+  --animate-duration: 5s;
+}
+
+body {
+  position: relative;
+}
+body .stiker {
+  padding: 15px 8px 15px 8px;
+  width: 35px;
+  height: 85px;
+  position: fixed;
+  top: 500px;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  background-color: #D02322;
+  z-index: 1;
+  color: white;
+}
+body .stiker i {
+  color: white;
+  cursor: pointer;
+  padding-top: 5px;
 }/*# sourceMappingURL=sass.css.map */
