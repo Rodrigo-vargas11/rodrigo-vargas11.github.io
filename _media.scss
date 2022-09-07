@@ -63,11 +63,9 @@ iframe{
 }
 /* galeria */
 .galeria{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
         .galeria_foto{
                         width: 100%;
@@ -78,59 +76,28 @@ iframe{
                     .ravioles{
                         grid-area: ravioles;
 
-
                     }
                     .pure{
                         grid-area: pure;
                         &:hover{
-                            transition: width 2s, height 2s, transform 3s;
-                            width: 500px;
-                            height: 490px;
-                            transition-duration: 2s;
-                            transition-delay: 1s;
+                        display: none;
                         
                         }
                     }
                     .pescado{
-                        grid-area: pescado;
-                        transition: all 3s; 
-                        transition: width 2s transform 3s ;
-                        transition-delay: 0.5s;
                         &:hover{
-                            width: 320px;
-                            transform: scale(1);
-                            
-                        
+                        display: none;
                         }
                     }
                     .pasta{
-                        grid-area: pasta;
                         &:hover{
-                            transition: width 2s, height 2s, transform 3s;
-                            width: 590px;
-                            height: 390px;
-                            transform: scale(1);
-                            transition-duration: 3s;
-                            transition-delay: 1s;
-                            
-                        
-                            
-                        
+                            display: none;
                         }
                     }
                     .wok{
-                        grid-area: wok;
-                        transition: all 4s;
-                        transition: width 3s, height 3s, transform 3s;
-                        transition-delay: 0.5s;
+                    
                         &:hover{
-                        
-                            width: 270px;
-                            height: 210px;
-                            
-                        
-                        
-                        
+                                display: none;
                         }
                 
                     }
@@ -139,13 +106,9 @@ iframe{
                 
                     }
                     .donas{
-                        grid-area: donas;
-                        transition: all 4s; 
-                        transition: width 3s, height 3s, transform 4s;
-                        transition-delay: 0.5s;
                         &:hover{
-                            width: 390px;
-                            height: 290px;
+                            display: none;
+                        
                         
                         
                         }
@@ -162,16 +125,11 @@ iframe{
 
 
 @media screen and (min-width: 768px )and (max-width: 1024px) {
-    /* menu  */
-
-    
-
+/* menu  */
     ul{
     gap: 0.5rem; 
-    
- 
-    
 }
+
 /* nosotros */
 .sobreNosotros{
 
@@ -181,7 +139,6 @@ iframe{
 
 }
 .icon{
-   
     width: 100%;
     gap: 4rem;
     

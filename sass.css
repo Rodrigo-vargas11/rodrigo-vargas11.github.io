@@ -329,55 +329,22 @@ i {
     grid-area: pure;
   }
   .galeria .pure:hover {
-    transition: width 2s, height 2s, transform 3s;
-    width: 500px;
-    height: 490px;
-    transition-duration: 2s;
-    transition-delay: 1s;
-  }
-  .galeria .pescado {
-    grid-area: pescado;
-    transition: all 3s;
-    transition: width 2s transform 3s;
-    transition-delay: 0.5s;
+    display: none;
   }
   .galeria .pescado:hover {
-    width: 320px;
-    transform: scale(1);
-  }
-  .galeria .pasta {
-    grid-area: pasta;
+    display: none;
   }
   .galeria .pasta:hover {
-    transition: width 2s, height 2s, transform 3s;
-    width: 590px;
-    height: 390px;
-    transform: scale(1);
-    transition-duration: 3s;
-    transition-delay: 1s;
-  }
-  .galeria .wok {
-    grid-area: wok;
-    transition: all 4s;
-    transition: width 3s, height 3s, transform 3s;
-    transition-delay: 0.5s;
+    display: none;
   }
   .galeria .wok:hover {
-    width: 270px;
-    height: 210px;
+    display: none;
   }
   .galeria .oreo {
     grid-area: oreo;
   }
-  .galeria .donas {
-    grid-area: donas;
-    transition: all 4s;
-    transition: width 3s, height 3s, transform 4s;
-    transition-delay: 0.5s;
-  }
   .galeria .donas:hover {
-    width: 390px;
-    height: 290px;
+    display: none;
   }
   .galeria .varios {
     grid-area: varios;
