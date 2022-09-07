@@ -148,40 +148,6 @@
 }
 
 .section {
-  grid-area: section;
-}
-
-.article {
-  grid-area: article;
-  background: radial-gradient(rgba(76, 169, 210, 0.6901960784), transparent);
-}
-.article .form-label {
-  color: #D02322;
-  text-align: center;
-  font-weight: 900;
-}
-.article .botonEnviar {
-  font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.footer {
-  grid-area: footer;
-  background: radial-gradient(rgba(167, 190, 224, 0.8509803922), transparent);
-  text-align: center;
-}
-.footer .fondo {
-  background: radial-gradient(rgba(228, 231, 235, 0.431372549), rgba(60, 53, 53, 0.5490196078));
-}
-.footer .img {
-  width: 88px;
-}
-.footer .infoContacto {
-  font-family: "ZonaPro-bold", "helvetica";
-}
-
-.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +198,36 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.article {
+  grid-area: article;
+  background: radial-gradient(rgba(76, 169, 210, 0.6901960784), transparent);
+}
+.article .form-label {
+  color: #D02322;
+  text-align: center;
+  font-weight: 900;
+}
+.article .botonEnviar {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background: radial-gradient(rgba(167, 190, 224, 0.8509803922), transparent);
+  text-align: center;
+}
+.footer .fondo {
+  background: radial-gradient(rgba(228, 231, 235, 0.431372549), rgba(60, 53, 53, 0.5490196078));
+}
+.footer .img {
+  width: 88px;
+}
+.footer .infoContacto {
+  font-family: "ZonaPro-bold", "helvetica";
 }
 
 iframe {
@@ -319,6 +315,72 @@ i {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+  .galeria .galeria_foto {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .galeria .ravioles {
+    grid-area: ravioles;
+  }
+  .galeria .pure {
+    grid-area: pure;
+  }
+  .galeria .pure:hover {
+    transition: width 2s, height 2s, transform 3s;
+    width: 500px;
+    height: 490px;
+    transition-duration: 2s;
+    transition-delay: 1s;
+  }
+  .galeria .pescado {
+    grid-area: pescado;
+    transition: all 3s;
+    transition: width 2s transform 3s;
+    transition-delay: 0.5s;
+  }
+  .galeria .pescado:hover {
+    width: 320px;
+    transform: scale(1);
+  }
+  .galeria .pasta {
+    grid-area: pasta;
+  }
+  .galeria .pasta:hover {
+    transition: width 2s, height 2s, transform 3s;
+    width: 590px;
+    height: 390px;
+    transform: scale(1);
+    transition-duration: 3s;
+    transition-delay: 1s;
+  }
+  .galeria .wok {
+    grid-area: wok;
+    transition: all 4s;
+    transition: width 3s, height 3s, transform 3s;
+    transition-delay: 0.5s;
+  }
+  .galeria .wok:hover {
+    width: 270px;
+    height: 210px;
+  }
+  .galeria .oreo {
+    grid-area: oreo;
+  }
+  .galeria .donas {
+    grid-area: donas;
+    transition: all 4s;
+    transition: width 3s, height 3s, transform 4s;
+    transition-delay: 0.5s;
+  }
+  .galeria .donas:hover {
+    width: 390px;
+    height: 290px;
+  }
+  .galeria .varios {
+    grid-area: varios;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
