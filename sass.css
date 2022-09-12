@@ -92,6 +92,7 @@
 .galeria .pure {
   grid-area: pure;
 }
+@media(hover: hover){
 .galeria .pure:hover {
   transition: width 2s, height 2s, transform 3s;
   width: 500px;
@@ -120,6 +121,7 @@
   transform: scale(1);
   transition-duration: 3s;
   transition-delay: 1s;
+}
 }
 .galeria .wok {
   grid-area: wok;
