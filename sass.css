@@ -100,20 +100,17 @@
   transition-duration: 2s;
   transition-delay: 1s;
 }
-.galeria .pescado {
-  grid-area: pescado;
-  transition: all 4s;
-  transition: width 3s, height 3s, transform 4s;
-  transition-delay: 0.5s;
-}
+
 .galeria .pescado:hover {
   width: 210px;
   height: 300px;
   z-index: 1;
 }
-.galeria .pasta {
-  grid-area: pasta;
+.galeria .wok:hover {
+  width: 270px;
+  height: 210px;
 }
+
 .galeria .pasta:hover {
   transition: width 2s, height 2s, transform 3s;
   width: 590px;
@@ -122,6 +119,19 @@
   transition-duration: 3s;
   transition-delay: 1s;
 }
+.galeria .donas:hover {
+  width: 390px;
+  height: 290px;
+}
+}
+.galeria .pasta {
+  grid-area: pasta;
+}
+.galeria .pescado {
+  grid-area: pescado;
+  transition: all 4s;
+  transition: width 3s, height 3s, transform 4s;
+  transition-delay: 0.5s;
 }
 .galeria .wok {
   grid-area: wok;
@@ -129,10 +139,7 @@
   transition: width 3s, height 3s, transform 3s;
   transition-delay: 0.5s;
 }
-.galeria .wok:hover {
-  width: 270px;
-  height: 210px;
-}
+
 .galeria .oreo {
   grid-area: oreo;
 }
@@ -142,10 +149,7 @@
   transition: width 3s, height 3s, transform 4s;
   transition-delay: 0.5s;
 }
-.galeria .donas:hover {
-  width: 390px;
-  height: 290px;
-}
+
 .galeria .varios {
   grid-area: varios;
 }
