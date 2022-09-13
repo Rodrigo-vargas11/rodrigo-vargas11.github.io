@@ -22,6 +22,28 @@
   height: 100vh;
 }
 
+body {
+  position: relative;
+}
+body .stiker {
+  padding: 15px 8px 15px 8px;
+  width: 35px;
+  height: 85px;
+  position: fixed;
+  top: 500px;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  background-color: #D02322;
+  z-index: 2;
+  color: white;
+}
+body .stiker i {
+  color: white;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
 .sobreNosotros {
   background-color: #E6E7E8;
   display: grid;
@@ -64,6 +86,29 @@
   text-align: center;
 }
 
+#tipoEvento fieldset {
+  width: 80%;
+  border: 3px solid #D02322;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 21px 105px;
+}
+#tipoEvento fieldset legend {
+  font-size: 21px;
+  color: #D02322;
+  float: none;
+}
+#tipoEvento fieldset .flex {
+  display: flex;
+  gap: 91px;
+  justify-content: space-around;
+}
+#tipoEvento fieldset .flex .logo-evento {
+  width: 78px;
+  height: 57px;
+}
+
 .titulo {
   font-size: 36px;
   color: #D02322;
@@ -92,7 +137,6 @@
 .galeria .pure {
   grid-area: pure;
 }
-@media(hover: hover){
 .galeria .pure:hover {
   transition: width 2s, height 2s, transform 3s;
   width: 500px;
@@ -100,17 +144,20 @@
   transition-duration: 2s;
   transition-delay: 1s;
 }
-
+.galeria .pescado {
+  grid-area: pescado;
+  transition: all 4s;
+  transition: width 3s, height 3s, transform 4s;
+  transition-delay: 0.5s;
+}
 .galeria .pescado:hover {
   width: 210px;
   height: 300px;
   z-index: 1;
 }
-.galeria .wok:hover {
-  width: 270px;
-  height: 210px;
+.galeria .pasta {
+  grid-area: pasta;
 }
-
 .galeria .pasta:hover {
   transition: width 2s, height 2s, transform 3s;
   width: 590px;
@@ -119,30 +166,16 @@
   transition-duration: 3s;
   transition-delay: 1s;
 }
-.galeria .donas:hover {
-  width: 390px;
-  height: 290px;
-}
-.section .img1:hover::before, .section .img2:hover::before {
-  transform: scaleY(1);
-}
-}
-.galeria .pasta {
-  grid-area: pasta;
-}
-.galeria .pescado {
-  grid-area: pescado;
-  transition: all 4s;
-  transition: width 3s, height 3s, transform 4s;
-  transition-delay: 0.5s;
-}
 .galeria .wok {
   grid-area: wok;
   transition: all 4s;
   transition: width 3s, height 3s, transform 3s;
   transition-delay: 0.5s;
 }
-
+.galeria .wok:hover {
+  width: 270px;
+  height: 210px;
+}
 .galeria .oreo {
   grid-area: oreo;
 }
@@ -152,7 +185,10 @@
   transition: width 3s, height 3s, transform 4s;
   transition-delay: 0.5s;
 }
-
+.galeria .donas:hover {
+  width: 390px;
+  height: 290px;
+}
 .galeria .varios {
   grid-area: varios;
 }
@@ -186,7 +222,9 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.section .img1:hover::before, .section .img2:hover::before {
+  transform: scaleY(1);
+}
 .section .img1::before, .section .img2::before {
   content: "Menu Formal";
   position: absolute;
@@ -260,29 +298,6 @@ iframe {
 i {
   font-size: 20px;
   margin-right: 5px;
-}
-
-#tipoEvento fieldset {
-  width: 80%;
-  border: 3px solid #D02322;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 21px 105px;
-}
-#tipoEvento fieldset legend {
-  font-size: 21px;
-  color: #D02322;
-  float: none;
-}
-#tipoEvento fieldset .flex {
-  display: flex;
-  gap: 91px;
-  justify-content: space-around;
-}
-#tipoEvento fieldset .flex .logo-evento {
-  width: 78px;
-  height: 57px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 520px) {
@@ -364,26 +379,4 @@ i {
 }
 .animate__backInLeft {
   --animate-duration: 5s;
-}
-
-body {
-  position: relative;
-}
-body .stiker {
-  padding: 15px 8px 15px 8px;
-  width: 35px;
-  height: 85px;
-  position: fixed;
-  top: 500px;
-  left: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 10px;
-  background-color: #D02322;
-  z-index: 2;
-  color: white;
-}
-body .stiker i {
-  color: white;
-  cursor: pointer;
-  padding-top: 5px;
 }/*# sourceMappingURL=sass.css.map */

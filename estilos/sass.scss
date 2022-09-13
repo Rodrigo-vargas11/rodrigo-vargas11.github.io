@@ -24,6 +24,32 @@
     height: 100vh;
 }
 
+body{
+    position: relative;
+
+// redes sociales
+
+.stiker{
+        padding: 15px 8px 15px 8px;
+    width: 35px;
+    height: 85px;
+    position:  fixed;
+    top: 500px;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    background-color: #D02322;
+    z-index: 2;
+    color:white;
+i{
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+    
+}
+}
+}
+
 // sobre nosotros
 .sobreNosotros{
     background-color: #E6E7E8;
@@ -76,6 +102,30 @@
         }
     }
 }
+#tipoEvento fieldset{
+    width: 80%;
+    border: 3px solid #D02322;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 21px 105px;
+    legend{
+        font-size: 21px;
+        color:#D02322;
+        float: none;
+    
+    }
+    .flex{
+        display: flex;
+        gap: 91px;
+        justify-content: space-around;
+        .logo-evento{
+            width: 78px;
+            height: 57px;
+
+        }
+    }
+}
 .titulo{
   @include titulo;  //utilizo mixin
 
@@ -94,7 +144,7 @@
     margin: 0 auto;
     padding-bottom: 10px;
 
-//  @media(hover: hover){
+
         .galeria_foto{
                         width: 100%;
                         height: 100%;
@@ -302,56 +352,7 @@ iframe{
         margin-right: 5px
     }
 
-    #tipoEvento fieldset{
-        width: 80%;
-        border: 3px solid #D02322;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 21px 105px;
-        legend{
-            font-size: 21px;
-            color:#D02322;
-            float: none;
-        
-        }
-        .flex{
-            display: flex;
-            gap: 91px;
-            justify-content: space-around;
-            .logo-evento{
-                width: 78px;
-                height: 57px;
-
-            }
-        }
-    }
 @import "media";
 .animate__backInLeft{
     --animate-duration: 5s;
 }
-body{
-    position: relative;
-
-
-.stiker{
-        padding: 15px 8px 15px 8px;
-    width: 35px;
-    height: 85px;
-    position:  fixed;
-    top: 500px;
-    left: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 10px;
-    background-color: #D02322;
-    z-index: 2;
-    color:white;
-i{
-    color: white;
-    cursor: pointer;
-    padding-top: 5px;
-    
-}
-}
-}
-
